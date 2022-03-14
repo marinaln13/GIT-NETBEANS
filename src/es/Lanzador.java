@@ -11,8 +11,8 @@ public class Lanzador {
      */
     public static void main(String[] args) {
         
-        Calzado c1= new Calzado("BOTA", 38, false);
-        Calzado c2= new Calzado("ZAPATILLA",40,true);
+        Calzado c1= new Calzado("BOTA", 38, false, "BLANCO");
+        Calzado c2= new Calzado("ZAPATILLA",40,true, "NEGRO");
         
         System.out.println("Muestro el toString de Calzado"+c1.toString());
         
