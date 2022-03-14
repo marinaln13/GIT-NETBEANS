@@ -9,6 +9,7 @@ public class Calzado {
     String tipo;    
     int talla;
     boolean cordones;
+    String color;
     
     /**
      * Método constructor por defecto de un calzado 
@@ -17,6 +18,7 @@ public class Calzado {
         this.tipo = "Zapatilla";
         this.talla = 38;
         this.cordones = true;
+        this.color = "Blanco";
     }
 
     /** 
@@ -25,10 +27,19 @@ public class Calzado {
      * @param talla Atributo que indica la talla del calzado
      * @param cordones Atributo que indica si lleva o no cordones
      */  
-    public Calzado(String tipo, int talla, boolean cordones) {
+    public Calzado(String tipo, int talla, boolean cordones, String color) {
         this.tipo = tipo;
         this.talla = talla;
         this.cordones = cordones;
+        this.color = color;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
     
     /**
